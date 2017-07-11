@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./client/styles.css">
+    <title>Knockout</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Knockout Tournament</h1>
+        <div class="input">
+            <div class="field-input">
+                <label class="titleLabel">Teams Per Match</label>
+                <input class="textInp" id="teamsPerMatch" type="number" />
+            </div>
+            <div class="field-input">
+                <label class="titleLabel">Number Of Teams</label>
+                <input class="textInp" id="numberOfTeams" type="number" />
+            </div>
+            <button id="start">Play</button>
+        </div>
+        <div class="result">
+            <p>
+                <span class="field xxLarge" id="winner"></span>
+            </p>
+            <p>
+                <span class="field" id="status"></span>
+            </p>
+            <p>
+                <span class="field" id="error"></span>
+            </p>
+            <p>
+                <span class="field font30" id="progress"></span>
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="./client/constants.js"></script>
+    <script type="text/javascript" src="./client/utility.js"></script>
+    <!-- <script type="text/javascript" src="./client/request.js"></script> -->
+    <script type="text/javascript" src="./client/tournament.js"></script>
+    <script type="text/javascript" src="./client/client.js"></script>
+</body>
+
+</html>

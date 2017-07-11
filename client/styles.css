@@ -1,0 +1,129 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    font-size: 15px;
+}
+
+.input {
+    text-align: center;
+}
+
+.input .field-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.titleLabel {
+    flex: 1;
+    text-align: right;
+    margin-right: 15px;
+}
+
+input[type=number] {
+    box-sizing: border-box;
+    padding: 15px;
+    flex: 5;
+    border: 1px solid #9E9E9E;
+}
+
+input[type=number]:focus {
+    outline: none;
+}
+
+button {
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin: 10px 0;
+    background-color: #03A9F4;
+    width: 80px;
+    color: white;
+    font-size: 15px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.heading {
+    text-align: left;
+    font-weight: normal;
+}
+
+.field {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+#error {
+    color: #f44336;
+}
+
+#winner {
+    color: #4caf50;
+}
+
+#status {
+    color: #607d8b;
+}
+
+#progress {
+    background-color: white;
+}
+
+.font30 {
+    font-size: 30px;
+}
+
+.xxLarge {
+    font-size: xx-large;
+}
+
+#error:empty,
+#winner:empty,
+#status:empty,
+#progress:empty {
+    display: none;
+}
+
+.result {
+    text-align: center;
+}
+
+@media screen and (min-width:761px) {
+    .container {
+        margin-top: 20px;
+        padding: 15px;
+        max-width: 60%;
+        margin-left: 20%
+    }
+}
+
+@media screen and (max-width:760px) {}
+
+@media screen and (max-width:480px) {}
+
+@media screen and (max-width:360px) {
+    .input .field-input {
+        display: flex;
+        margin-bottom: 15px;
+        align-items: center;
+        flex-direction: column;
+    }
+    .titleLabel {
+        width: 100%;
+        text-align: left;
+    }
+    input[type=number] {
+        font-size: 15px;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid black;
+    }
+}
